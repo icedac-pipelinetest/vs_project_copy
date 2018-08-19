@@ -2,7 +2,7 @@
 /****************************************************************************
  * 	
  *		FormatString.h
- *      ($\Olive\tools\vs_project_copy\src)
+ *      ($\tools\vs_project_copy\src)
  *
  *		by icedac@gmail.com (2014/04/24)
  *

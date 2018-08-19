@@ -1,7 +1,7 @@
 /****************************************************************************
  *
  *  ProjectCopier.cpp
- *      ($\Olive\tools\vs_project_copy\src)
+ *      ($\tools\vs_project_copy\src)
  *
  *		by icedac@gmail.com (2014/04/24)
  *     (2014/8/19)
@@ -9,6 +9,8 @@
  ***/
 #include "stdafx.h"
 #include "FormatString.h"
+#include <sys/types.h>
+#include <sys/stat.h>
 
 #pragma comment(lib, "rpcrt4.lib")  // UuidCreate - Minimum supported OS Win 2000
 
@@ -200,8 +202,29 @@ public:
     }
 
 public:
+	static bool ExistDir(const _TCHAR* dstName) {
+		struct _stat info;
+
+		if (_tstat(dstName, &info) != 0)
+		{
+			// ok not exits
+			return false;
+		}
+		else if (info.st_mode & S_IFDIR)  // S_ISDIR() doesn't exist on my windows 
+		{
+			_tprintf(_T("%s already exists.\n"), dstName);
+			return true;
+		}
+
+		_tprintf( _T("%s is exist and not a directory\n"), dstName);
+		return true;
+	}
+
     void Run()
     {
+		// check already exists
+		if (ExistDir(m_dstName)) return;
+
         _tprintf( _T( "try to ProjectCopy from [srcDir:%s] to [%s] (filter: %s)\n" ),
                   m_srcName, m_dstName, m_fileFilter );
 
