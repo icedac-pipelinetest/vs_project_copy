@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProjectCopier", "ProjectCopier.vcxproj", "{DBDD9472-E93E-42B8-B6F2-AA9EEBE0C11C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBDD9472-E93E-42B8-B6F2-AA9EEBE0C11C}.Debug|x86.ActiveCfg = Debug|Win32
+		{DBDD9472-E93E-42B8-B6F2-AA9EEBE0C11C}.Debug|x86.Build.0 = Debug|Win32
+		{DBDD9472-E93E-42B8-B6F2-AA9EEBE0C11C}.Release|x86.ActiveCfg = Release|Win32
+		{DBDD9472-E93E-42B8-B6F2-AA9EEBE0C11C}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
