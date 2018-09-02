@@ -12,6 +12,7 @@ def dep_repos = [
 pipeline {
     agent {
         node {
+            label 'any'
             customWorkspace "C:\\workspace\\vs_project_copy"
         }
     }
