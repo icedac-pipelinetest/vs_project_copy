@@ -10,7 +10,6 @@ def dep_repos = [
 ];
 
 pipeline {
-    agent any
     agent {
         node {
             customWorkspace "C:\\workspace\\vs_project_copy"
@@ -40,7 +39,7 @@ pipeline {
                         stage(it) {
                             steps {
                                 // checkout it
-                                echo 'checkout .. ${$it} ..'
+                                echo 'checkout .. ${it} ..'
                             }
                         }
                     }
