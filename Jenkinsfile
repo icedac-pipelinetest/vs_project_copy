@@ -125,14 +125,14 @@ pipeline {
 
             script {
 
-                echo 'post/success/script ...'
+                echo 'post/success/script ... test-100 branch'
             }
 
         }
         failure {
             script {
 
-                echo 'post/failed/script ...'
+                echo 'post/failed/script ... test-100 branch'
             }
         }
     }
