@@ -35,9 +35,11 @@ pipeline {
 
         stage('Checkout Dependencies') {
             steps {
-                dep_repos.each {
-                    // checkout it
-                    echo 'checkout .. ${it} ..'
+                script {
+                    dep_repos.each {
+                        // checkout it
+                        echo 'checkout .. ${it} ..'
+                    }
                 }
             }
         }
