@@ -38,7 +38,6 @@ pipeline {
                 dep_repos.each {
                     // checkout it
                     echo 'checkout .. ${it} ..'
-                    }
                 }
             }
         }
