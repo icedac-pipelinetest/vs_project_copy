@@ -1,9 +1,9 @@
 #!groovy
 
-env.'DependenciesBranch' = 'develop'
+env.'DependenciesBranch' = 'master'
 
 def getBuildJobType() {
-    return "CI";
+    return 'CI';
 }
 def dep_repos = [
     'helloworld'
