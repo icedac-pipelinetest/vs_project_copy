@@ -92,7 +92,7 @@ pipeline {
                 script {
                     if (getBuildJobType() == 'CI') {
 
-                        buildVStudioSolutions("${msbuild}", ['src\\vs_project_copy.sln'], 'Win32', 'Debug', false, false)
+                        buildVStudioSolutions("${msbuild}", ['src\\vs_project_copy.sln'], 'x86', 'Debug', false, false)
 
                     }
                     else if (getBuildJobType() ==~ /(IB|RC)/) {
