@@ -35,14 +35,9 @@ pipeline {
 
         stage('Checkout Dependencies') {
             steps {
-                parallel {
-                    dep_repos.each {
-                        stage(it) {
-                            steps {
-                                // checkout it
-                                echo 'checkout .. ${it} ..'
-                            }
-                        }
+                dep_repos.each {
+                    // checkout it
+                    echo 'checkout .. ${it} ..'
                     }
                 }
             }
