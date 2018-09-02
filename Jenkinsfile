@@ -129,6 +129,12 @@ pipeline {
             }
 
         }
+        failure {
+            script {
+
+                echo 'post/failed/script ...'
+            }
+        }
     }
 }
 

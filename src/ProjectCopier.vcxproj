@@ -14,7 +14,7 @@
     <ProjectGuid>{DBDD9472-E93E-42B8-B6F2-AA9EEBE0C11C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>ProjectCopier</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.10240.0</WindowsTargetPlatformVersion>
     <ProjectName>ProjectCopier</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
